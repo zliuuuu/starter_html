@@ -1,0 +1,351 @@
+/* ================================
+   Accessibility Features
+   ================================ */
+
+/* Styles for the "Skip to Main Content" link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    padding: 6px;
+    transform: translateX(-50%);
+
+    padding: 10px;
+    background: #ffffff;
+    color: #11398f;
+    text-decoration: none;
+    z-index: 1000;
+    border-radius: 4px;
+    transition: top 1s;
+}
+
+.skip-link:focus {
+    top: 150px;
+}
+
+nav a.current{
+    /* text-decoration: underline wavy; */
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-underline-offset: 10%;
+}
+body {
+    line-height: 150%;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    background-color: #568eb4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right,
+    #bcbcfe,#9bbbf8,#b8fffa);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0vw 5vw 0vw 5vw;
+    transition: font-size 0.3s;
+}
+
+nav ul li a {
+    color: #b9dbec;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    font-family: '花体', cursive;
+    font-size: 150%;
+    position: relative;
+    text-decoration: underline;
+}
+nav ul li .active a {
+    background-color: #568eb4; /* 例如，设置为背景颜色 */
+    color: #fff; /* 文字颜色为白色 */
+    text-decoration: underline; 
+    text-transform: uppercase;
+}
+nav ul li a:hover::after {
+    content: '\223D';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.8em;
+    display: block;
+}
+/* Create a flex container for the images */
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Creates equal spacing between items */
+    margin-bottom: 20px; /* Add some space below the container */
+}
+
+/* Style individual images */
+.img-container img {
+    flex: 1; 
+    max-width: calc(50% - 10px); /* Assuming you want a little gap between images */
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+main div {
+    background-color: rgba(136, 217, 254, 0.5); /* 半透明背景 */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+main div h2 {
+    color:#2828cb;
+    font-size: 300%;
+    margin: 2% 0% 2% 0%; 
+    font-weight: bold;
+    line-height: 1.2;
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
+    font-family: "Carter One", Architects Daughter, Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main div span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+main div img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+main div p {
+    font-size: 24px;
+    line-height: 1.6;
+    color:#133368;
+
+
+    margin-bottom: 15px;
+}
+
+main div h3 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+main div ul, main div ol {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+main div ul li, main div ol li {
+    margin-bottom: 5px;
+}
+nav a.current{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-underline-offset: 10%;
+}
+
+.pet-cover {
+    z-index: -1;
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/pet.jpeg');
+    background-size: cover;  /* 使图片覆盖整个元素 */
+    background-position: bottom;  /* 将背景图片居中 */
+    background-repeat: no-repeat;  /* 防止图片重复 */
+}
+
+h1{
+
+
+    /* font-weight: bold; */
+    font-size: 300%;
+    color :#75c9fd;
+    /* margin: 30% 0% 30% 0%; */
+    /* margin: 30vh 0 40vh 0;/ */
+    padding: 20vh 0 10vh 0;
+    /* padding: 10px 0 10px 60px; */
+    text-align: center;
+    font-family: Carter One, "Architects Daughter", Nunito, "SangBleu Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+}
+
+.pets-h1 {
+    font-size: 4em;
+    text-align: center;
+    top: -120px; /* 例如，增加移动的距离到70px */
+    margin: 0;  /* 去掉默认的外边距，确保标题正好在中央 */
+    z-index: -1;
+}
+.trips-h1 {
+    font-size: 4em;
+    text-align: center;
+    /* position: relative;  */
+    top: -120px; 
+    margin: 0;  /* 去掉默认的外边距，确保标题正好在中央 */
+    z-index: 0;
+}
+.recipes-h1
+{
+    font-size: 4em;
+    text-align: center; 
+    top: -120px; /* 例如，增加移动的距离到70px */
+    margin: 0;  /* 去掉默认的外边距，确保标题正好在中央 */
+    color: blue;
+   
+}
+.Bacon-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 定义两列，每列占据可用空间的一半 */
+    gap: 16px; /* 图片之间的间距 */
+}
+
+.Bacon-div img,
+.Bacon-div video {
+    width: 100%;
+    height: auto;
+}
+
+.Bacon-div video {
+    grid-column: span 2; /* 视频会横跨两列 */
+}
+
+
+.Bacon-div h3,
+.Bacon-div .pet-intro-div, 
+.Bacon-div h2 {
+    grid-column: span 2; /* 横跨两列 */
+}
+
+.pet-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 定义了两列 */
+    gap: 16px; /* 图片和视频之间的间隔 */
+
+}
+
+
+.pet-div img, .pet-div video {
+    width: 100%; 
+    height: auto; 
+    max-width: calc(50% - 20px); 
+    margin: 0 auto; 
+}
+
+
+.pet-div img {
+    height: 300px; 
+    object-fit: cover;
+}
+/* travel*/
+
+.travel-cover {
+    z-index: -1;
+    text-align: center;
+    padding: 20px 0;
+    background-image: url('../images/travel.jpeg');
+    background-size: cover;
+    background-position: bottom;  
+    background-repeat: no-repeat; 
+}
+
+.travel-div {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+.travel-div img, .travel-div video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.travel-div h1, .travel-div h2 {
+    color: #333;
+}
+
+.travel-div p {
+    font-size: 16px;
+}
+
+.recipes-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+h1, h2, h3, p, figcaption, li{
+    transition: transform 0.3s;
+}
+
+h1:hover, h2:hover, h3:hover, p:hover, figcaption:hover, li:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    main div {
+        padding: 10px;
+    }
+    .skip-link {
+        display: none;
+    }
+    .Bacon-div {
+        grid-template-columns: 1fr;
+    }
+    .pet-div {
+        grid-template-columns: 1fr; /* 只有一列 */
+    }
+    .travel-div img, .travel-div video {
+        margin: 10px 0;}
+}

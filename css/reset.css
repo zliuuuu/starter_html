@@ -1,0 +1,110 @@
+/* Basic HTML element resets */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: none;
+}
+
+/* HTML5 block display */
+article, aside, figure, footer, header, nav, section, details, summary { 
+    display: block; 
+}
+
+/* Box-sizing border-box for all */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Images and media responsiveness */
+img, object, embed {
+    max-width: 100%;
+}
+
+/* Ensures vertical scrollbar consistency */
+html { 
+    overflow-y: scroll; 
+}
+
+/* Reset list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Reset quotes for blockquote & q */
+blockquote, q { 
+    quotes: none; 
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Remove text decoration for a clearer intent */
+a:link, a:visited {
+    text-decoration: none;
+}
+
+/* Remove outline for cleaner focus */
+a:focus {
+    outline: none;
+}
+
+/* Table presentation reset */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Consistent vertical alignment */
+th, td, td img {
+    vertical-align: top;
+}
+
+/* Reset form element styles */
+input, select, button, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: 100%;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Specific styles based on your requirements */
+
+/* Active page in navigation */
+.nav-item.current-page {
+    font-weight: bold; 
+    /* Add more styles, but ensure not to rely on color alone. */
+}
+
+/* "Skip to Main Content" link visibility */
+.skip-main-content {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-main-content:focus {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: visible;
+}
+
+/* Mobile optimization for navigation */
+.nav-item {
+    padding: 10px 15px;
+    font-size: 16px;
+}
